@@ -1,0 +1,24 @@
+{
+  "name": "202207-w1chwe-cristian-sarroca-david-arques",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Csarroca/202207-w1chwe-cristian-sarroca-david-arques.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Csarroca/202207-w1chwe-cristian-sarroca-david-arques/issues"
+  },
+  "homepage": "https://github.com/Csarroca/202207-w1chwe-cristian-sarroca-david-arques#readme",
+  "devDependencies": {
+    "husky": "^8.0.0"
+  }
+}
