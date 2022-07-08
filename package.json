@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "local-sass": "npx sass sass/style.scss css/style.css --watch",
+    "netlifly-sass": "npx sass sass/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
