@@ -23,8 +23,7 @@
   </head>
 
   <body>
-
- <header class="header">
+    <header class="header">
       <nav class="header__navigation">
         <h1 class="header__title">Travelulu</h1>
         <input type="checkbox" name="burgers" id="burgers" />
@@ -65,7 +64,7 @@
               <li class="flight-formulary-container__list-item">
                 <input
                   class="flight-formulary-container__button"
-                  type="button"
+                  type="submit"
                   value="Search"
                 />
               </li>
@@ -73,7 +72,59 @@
           </form>
         </div>
       </section>
-    </main>
 
+      <section class="search-box-container">
+        <div class="search-box-container__container">
+          <h2 class="search-box-container__heading">Search</h2>
+          <form>
+            <ul class="search-box-container__list">
+              <li class="search-box-container__list-item">
+                <input
+                  class="search-box-container__input"
+                  type="text"
+                  placeholder="Gold coast"
+                  id="destination"
+                />
+                <label for="destination">Destination/property name</label>
+              </li>
+              <li class="search-box-container__list-item">
+                <input
+                  class="search-box-container__input"
+                  type="text"
+                  placeholder="Check-in date"
+                  id="check-in-date"
+                />
+                <label for="check-in-date">Check-in date</label>
+              </li>
+              <li class="search-box-container__list-item">
+                <input
+                  class="search-box-container__input"
+                  type="text"
+                  placeholder="Check-out date"
+                  id="check-out-date"
+                />
+                <label for="check-out-date">Check-out date</label>
+              </li>
+              <li class="search-box-container__list-item">
+                <input
+                  class="search-box-container__input"
+                  type="text"
+                  placeholder="2 adults - 0 children"
+                  id="travelers"
+                />
+                <label for="travelers">Travellers</label>
+              </li>
+              <li class="search-box-container__list-item">
+                <input
+                  class="search-box-container__input"
+                  type="submit"
+                  placeholder="Search"
+                />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
