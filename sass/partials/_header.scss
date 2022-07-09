@@ -1,0 +1,10 @@
+@use "../variables/colors";
+@use "fonts";
+.header__title {
+  color: colors.$primary-color;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+}
