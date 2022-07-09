@@ -1,4 +1,14 @@
+@use "../variables/colors";
+
 .search-result__ubication-icon {
   -webkit-text-stroke: 2px #7c7bdd;
   -webkit-text-fill-color: transparent;
+}
+
+.search-result {
+  padding: 0 0 10px 25px;
+  border-bottom: 1px solid #bca4ff46;
+}
+
+search-result__images {
 }
