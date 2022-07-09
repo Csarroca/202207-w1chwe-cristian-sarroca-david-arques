@@ -14,6 +14,7 @@
   margin: 0;
   padding: 10px;
   align-content: center;
+  border-bottom: 1px solid #bca4ff46;
 }
 
 .header__navigation {
@@ -29,7 +30,7 @@
 
 label[for="burgers"] span {
   width: 30px;
-  border: 2px solid #5f2eea;
+  border: 2px solid colors.$primary-color;
   border-radius: 30px;
 }
 label[for="burgers"] {
