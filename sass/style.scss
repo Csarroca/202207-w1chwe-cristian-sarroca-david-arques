@@ -2,11 +2,14 @@
 @use "variables/mixins";
 @use "partials/first-section";
 @use "partials/fonts";
+@use "partials/header";
+
 
 * {
   box-sizing: border-box;
   margin: 0;
 }
+
 body {
   width: 100%;
 }
