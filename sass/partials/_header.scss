@@ -1,0 +1,41 @@
+@use "../variables/colors";
+
+.header__title {
+  color: colors.$primary-color;
+  margin: 0;
+  display: inline-block;
+}
+
+.header {
+  font-size: 1em;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0;
+  padding: 10px;
+  align-content: center;
+}
+
+.header__navigation {
+  display: flex;
+  align-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#burgers {
+  display: none;
+}
+
+label[for="burgers"] span {
+  width: 30px;
+  border: 2px solid #5f2eea;
+  border-radius: 30px;
+}
+label[for="burgers"] {
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

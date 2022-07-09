@@ -1,6 +1,13 @@
-@use "./variables/colors";
-@use "./variables/mixins";
+@use "variables/colors";
+@use "variables/mixins";
+@use "partials/fonts";
+@use "partials/header";
 
-.header__title {
-  color: red($color: #000000);
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
 }
