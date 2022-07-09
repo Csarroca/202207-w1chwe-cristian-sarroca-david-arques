@@ -3,6 +3,10 @@
 @use "partials/first-section";
 @use "partials/fonts";
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
 body {
   width: 100%;
 }
