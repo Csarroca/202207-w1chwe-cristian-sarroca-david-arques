@@ -1,6 +1,8 @@
 @use "variables/colors";
+@use "partials/first-section";
 @use "partials/fonts";
 @use "partials/header";
+
 
 * {
   box-sizing: border-box;

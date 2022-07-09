@@ -16,17 +16,64 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <header class="header">
+
+ <header class="header">
       <nav class="header__navigation">
         <h1 class="header__title">Travelulu</h1>
         <input type="checkbox" name="burgers" id="burgers" />
         <label for="burgers"> <span></span><span></span><span></span></label>
       </nav>
     </header>
+    <main>
+      <section class="flight-formulary-container">
+        <div class="flight-formulary-container__container">
+          <h2 class="flight-formulary-container__heading">
+            Find deals on hotels, homes and much more...
+          </h2>
+          <form>
+            <ul class="flight-formulary-container__list">
+              <li
+                class="flight-formulary-container__list-item flight-formulary-container__list-item__bigger"
+              >
+                <input
+                  class="flight-formulary-container__input"
+                  type="text"
+                  placeholder="Where are you going?"
+                />
+              </li>
+              <li class="flight-formulary-container__list-item">
+                <input
+                  class="flight-formulary-container__input"
+                  type="text"
+                  placeholder="Check-in - Check-out"
+                />
+              </li>
+              <li class="flight-formulary-container__list-item">
+                <input
+                  class="flight-formulary-container__input"
+                  type="text"
+                  placeholder="2 adults - 0 children"
+                />
+              </li>
+              <li class="flight-formulary-container__list-item">
+                <input
+                  class="flight-formulary-container__button"
+                  type="button"
+                  value="Search"
+                />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+    </main>
+
   </body>
 </html>
