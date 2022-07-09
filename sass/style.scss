@@ -1,0 +1,6 @@
+@use "./variables/colors";
+@use "./variables/mixins";
+
+.header__title {
+  color: red($color: #000000);
+}
