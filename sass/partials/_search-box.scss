@@ -21,31 +21,30 @@
     padding: 20px;
     padding-left: 60px;
     border-width: 0;
-  }
-  &__button {
-    @include mixins.buttton-style;
-    cursor: pointer;
-  }
-  &__list-item {
-    list-style-type: none;
     &--search-icon {
       background-image: url(../../images/search-icon.png);
       background-repeat: no-repeat;
-      background-position: 1rem 45%;
+      background-position: 18px;
     }
     &--calendar-icon {
-      background-image: url(../../images/search-icon.png);
+      background-image: url(../../images/calandar-icon.png);
       background-repeat: no-repeat;
-      background-position: 1rem 45%;
+      background-position: 18px;
     }
     &--profile-icon {
-      background-image: url(../../images/search-icon.png);
+      background-image: url(../../images/profile-icon.png);
       background-repeat: no-repeat;
-      background-position: 1rem 45%;
+      background-position: 18px;
     }
+  }
+  &__button {
+    @include mixins.buttton-style;
   }
   &__list {
     padding: 56px 0;
+  }
+  &__list-item {
+    list-style-type: none;
   }
 }
 label[for="destination"] {
