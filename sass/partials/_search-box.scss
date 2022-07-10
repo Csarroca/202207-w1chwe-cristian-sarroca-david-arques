@@ -47,7 +47,25 @@
     padding: 56px 0;
   }
 }
-label {
+label[for="destination"] {
+  color: colors.$background-color;
+  letter-spacing: 0.75px;
+  position: relative;
+  top: -87px;
+}
+label[for="check-in-date"] {
+  color: colors.$background-color;
+  letter-spacing: 0.75px;
+  position: relative;
+  top: -87px;
+}
+label[for="check-out-date"] {
+  color: colors.$background-color;
+  letter-spacing: 0.75px;
+  position: relative;
+  top: -87px;
+}
+label[for="travelers"] {
   color: colors.$background-color;
   letter-spacing: 0.75px;
   position: relative;
