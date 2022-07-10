@@ -1,0 +1,33 @@
+@use "../variables/colors";
+
+.notice-boxes-container {
+  display: flex;
+  justify-content: center;
+  &__container {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__box {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 16px;
+    padding: 20px 4px;
+    margin: 20px 0;
+    &--notice {
+      background-color: #e6fff7;
+      border: 3px solid #00c472;
+      color: darkgreen;
+    }
+    &--warning {
+      background-color: #ffe2ee;
+      border: 3px solid #ff006a;
+      color: darkred;
+    }
+  }
+  &__icon {
+    padding: 0px 16px;
+  }
+}
