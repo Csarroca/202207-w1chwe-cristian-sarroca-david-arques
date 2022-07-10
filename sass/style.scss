@@ -5,6 +5,9 @@
 @use "partials/search-box";
 @use "partials/house-cards";
 @use "partials/footer";
+@use "partials/notice-boxes";
+@use "partials/info-box";
+
 
 * {
   box-sizing: border-box;
@@ -22,5 +25,23 @@ body {
   main {
     padding-left: 8%;
     padding-right: 8%;
+  }
+}
+@media (min-width: 900px) {
+  .search-box-and-search-result-container {
+    display: flex;
+  }
+}
+@media (min-width: 900px) {
+  .search-box-container {
+    flex: 1;
+  }
+  .review-container {
+    flex: 2;
+  }
+}
+@media (min-width: 900px) {
+  .search-result__image {
+    margin-right: 35px;
   }
 }

@@ -34,6 +34,7 @@ label[for="burgers"] span {
   background-color: colors.$primary-color;
   border: 1.5px solid colors.$primary-color;
   border-radius: 30px;
+  cursor: pointer;
 }
 label[for="burgers"] {
   width: 30px;
@@ -41,6 +42,7 @@ label[for="burgers"] {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  cursor: pointer;
 }
 
 @media (min-width: 900px) {

@@ -1,0 +1,35 @@
+@use "../mixins/mixins";
+
+.info-box-container {
+  padding: 24px;
+}
+.info-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #5f2eea;
+  width: 100%;
+  height: 460px;
+  border-radius: 30px;
+  padding: 12%;
+  &__text {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 50px;
+    color: white;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+  }
+  &__button {
+    @include mixins.buttton-style;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: white;
+    text-transform: uppercase;
+    width: 218px;
+    cursor: pointer;
+  }
+}
