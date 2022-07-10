@@ -3,8 +3,9 @@
 .notice-boxes-container {
   display: flex;
   justify-content: center;
+  padding: 0px 20px;
   &__container {
-    width: 420px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;

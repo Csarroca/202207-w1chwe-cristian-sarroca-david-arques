@@ -24,6 +24,7 @@
   }
   &__button {
     @include mixins.buttton-style;
+    cursor: pointer;
   }
   &__list-item {
     list-style-type: none;
