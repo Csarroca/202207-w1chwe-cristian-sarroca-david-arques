@@ -24,3 +24,21 @@ body {
     padding-right: 8%;
   }
 }
+@media (min-width: 900px) {
+  .search-box-and-search-result-container {
+    display: flex;
+  }
+}
+@media (min-width: 900px) {
+  .search-box-container {
+    flex: 1;
+  }
+  .review-container {
+    flex: 2;
+  }
+}
+@media (min-width: 900px) {
+  .search-result__image {
+    margin-right: 35px;
+  }
+}
