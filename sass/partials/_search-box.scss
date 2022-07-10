@@ -1,0 +1,61 @@
+@use "../variables/colors";
+@use "../mixins/mixins";
+
+.search-box-container {
+  padding: 43px 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  &__container {
+    background-color: colors.$primary-color;
+    height: 614px;
+    width: 420px;
+    border-radius: 20px;
+    padding: 35px;
+  }
+  &__heading {
+    color: colors.$background-color;
+  }
+  &__input {
+    @include mixins.text-box-style;
+    padding: 20px;
+    padding-left: 60px;
+    border-width: 0;
+  }
+  &__button {
+    @include mixins.buttton-style;
+  }
+  &__list-item {
+    list-style-type: none;
+    &--search-icon {
+      background-image: url(../../images/search-icon.png);
+      background-repeat: no-repeat;
+      background-position: 1rem 45%;
+    }
+    &--calendar-icon {
+      background-image: url(../../images/search-icon.png);
+      background-repeat: no-repeat;
+      background-position: 1rem 45%;
+    }
+    &--profile-icon {
+      background-image: url(../../images/search-icon.png);
+      background-repeat: no-repeat;
+      background-position: 1rem 45%;
+    }
+  }
+  &__list {
+    padding: 56px 0;
+  }
+}
+label {
+  color: colors.$background-color;
+  letter-spacing: 0.75px;
+  position: relative;
+  top: -87px;
+}
+
+@media (min-width: 900px) {
+  .search-box-container {
+    justify-content: flex-start;
+  }
+}

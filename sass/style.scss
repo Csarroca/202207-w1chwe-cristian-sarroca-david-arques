@@ -2,6 +2,7 @@
 @use "partials/first-section";
 @use "partials/fonts";
 @use "partials/header";
+@use "partials/search-box";
 @use "partials/house-cards";
 
 * {
@@ -11,4 +12,10 @@
 
 body {
   width: 100%;
+}
+@media (min-width: 900px) {
+  main {
+    padding-left: 8%;
+    padding-right: 8%;
+  }
 }
