@@ -1,0 +1,26 @@
+@use "../variables/colors";
+
+@mixin buttton-style {
+  border: 2px solid colors.$highlighted-content-color;
+  background-color: colors.$highlighted-content-color;
+  font-family: Poppins;
+  width: 100%;
+  height: 55px;
+  color: white;
+  letter-spacing: 0.75px;
+  font-size: larger;
+  border-radius: 40px;
+}
+
+@mixin text-box-style {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  padding: 0 6%;
+  letter-spacing: 0.75px;
+  font-size: larger;
+  &::placeholder {
+    opacity: 1;
+    color: black;
+  }
+}
