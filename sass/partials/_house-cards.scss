@@ -47,7 +47,6 @@
 }
 
 .booking-button {
-  background-color: white;
   color: colors.$primary-color;
   border: 2px solid #d9dbe9;
   width: 150px;
@@ -56,7 +55,9 @@
   font-size: small;
   border-radius: 40px;
   margin-bottom: 30px;
+  font-weight: bold;
   cursor: pointer;
+  background-color: transparent;
 }
 
 @media (min-width: 900px) {
@@ -65,6 +66,8 @@
     flex-direction: row;
   }
   .booking-button {
-    width: 100%;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
   }
 }
