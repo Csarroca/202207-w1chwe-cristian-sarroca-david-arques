@@ -24,3 +24,16 @@
     color: black;
   }
 }
+
+@mixin footer-text-style {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+  line-height: 28px;
+  font-weight: 400;
+  margin: 0 30px 70px 30px;
+  font-size: small;
+  color: colors.$grey-body-color;
+}

@@ -4,8 +4,10 @@
 @use "partials/header";
 @use "partials/search-box";
 @use "partials/house-cards";
+@use "partials/footer";
 @use "partials/notice-boxes";
 @use "partials/info-box";
+
 
 * {
   box-sizing: border-box;
