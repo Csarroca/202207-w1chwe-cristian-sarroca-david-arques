@@ -1,194 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travelulu</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
 
-    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travelulu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <body>
-    <header class="header">
-      <nav class="header__navigation">
-        <h1 class="header__title">Travelulu</h1>
-        <input type="checkbox" name="burgers" id="burgers" />
-        <label for="burgers"> <span></span><span></span><span></span></label>
-      </nav>
-    </header>
-    <main>
-      <section class="flight-formulary-container">
-        <div class="flight-formulary-container__container">
-          <h2 class="flight-formulary-container__heading">
-            Find deals on hotels, homes and much more...
-          </h2>
-          <form>
-            <ul class="flight-formulary-container__list">
-              <li
-                class="flight-formulary-container__list-item flight-formulary-container__list-item__bigger"
-              >
-                <input
-                  class="flight-formulary-container__input"
-                  type="text"
-                  placeholder="Where are you going?"
-                />
-              </li>
-              <li class="flight-formulary-container__list-item">
-                <input
-                  class="flight-formulary-container__input"
-                  type="text"
-                  placeholder="Check-in - Check-out"
-                />
-              </li>
-              <li class="flight-formulary-container__list-item">
-                <input
-                  class="flight-formulary-container__input"
-                  type="text"
-                  placeholder="2 adults - 0 children"
-                />
-              </li>
-              <li class="flight-formulary-container__list-item">
-                <input
-                  class="flight-formulary-container__button"
-                  type="submit"
-                  value="Search"
-                />
-              </li>
-            </ul>
-          </form>
-        </div>
-      </section>
-      <section class="search-box-container">
-        <div class="search-box-container__container">
-          <h2 class="search-box-container__heading">Search</h2>
-          <form>
-            <ul class="search-box-container__list">
-              <li
-                class="search-box-container__list-item search-box-container__list-item--search-icon"
-              >
-                <input
-                  class="search-box-container__input"
-                  type="text"
-                  placeholder="Gold coast"
-                  id="destination"
-                />
-                <label for="destination">Destination/property name</label>
-              </li>
-              <li
-                class="search-box-container__list-item search-box-container__list-item--calendar-icon"
-              >
-                <input
-                  class="search-box-container__input"
-                  type="text"
-                  placeholder="Check-in date"
-                  id="check-in-date"
-                />
-                <label for="check-in-date">Check-in date</label>
-              </li>
-              <li
-                class="search-box-container__list-item search-box-container__list-item--calendar-icon"
-              >
-                <input
-                  class="search-box-container__input"
-                  type="text"
-                  placeholder="Check-out date"
-                  id="check-out-date"
-                />
-                <label for="check-out-date">Check-out date</label>
-              </li>
-              <li
-                class="search-box-container__list-item search-box-container__list-item--profile-icon"
-              >
-                <input
-                  class="search-box-container__input"
-                  type="text"
-                  placeholder="2 adults - 0 children"
-                  id="travelers"
-                />
-                <label for="travelers">Travellers</label>
-              </li>
-              <li class="search-box-container__list-item">
-                <input
-                  class="search-box-container__button"
-                  type="submit"
-                  placeholder="Search"
-                />
-              </li>
-            </ul>
-          </form>
-        </div>
-      </section>
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
 
-      <section class="review-container">
-        <h2>254 Properties Found</h2>
-        <article class="search-result">
-          <ul class="search-result__images">
-            <li>
-              <img
-                class="search-result__image"
-                src="images/house1-image.png"
-                alt="foto de la propiedad en alquiler"
-              />
+<body>
+  <header class="header">
+    <nav class="header__navigation">
+      <h1 class="header__title">Travelulu</h1>
+      <input type="checkbox" name="burgers" id="burgers" />
+      <label for="burgers"> <span></span><span></span><span></span></label>
+    </nav>
+  </header>
+  <main>
+    <section class="flight-formulary-container">
+      <div class="flight-formulary-container__container">
+        <h2 class="flight-formulary-container__heading">
+          Find deals on hotels, homes and much more...
+        </h2>
+        <form>
+          <ul class="flight-formulary-container__list">
+            <li class="flight-formulary-container__list-item flight-formulary-container__list-item__bigger">
+              <input class="flight-formulary-container__input" type="text" placeholder="Where are you going?" />
             </li>
-            <li>
-              <img
-                class="search-result__image"
-                src="images/house1-image.png"
-                alt="foto de la propiedad en alquiler"
-              />
+            <li class="flight-formulary-container__list-item">
+              <input class="flight-formulary-container__input" type="text" placeholder="Check-in - Check-out" />
+            </li>
+            <li class="flight-formulary-container__list-item">
+              <input class="flight-formulary-container__input" type="text" placeholder="2 adults - 0 children" />
+            </li>
+            <li class="flight-formulary-container__list-item">
+              <input class="flight-formulary-container__button" type="submit" value="Search" />
             </li>
           </ul>
-          <div>
-            <div class="search-result__rating">
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-              <i class="fa-solid fa-star"></i>
-            </div>
+        </form>
+      </div>
+    </section>
+    <section class="search-box-container">
+      <div class="search-box-container__container">
+        <h2 class="search-box-container__heading">Search</h2>
+        <form>
+          <ul class="search-box-container__list">
+            <li class="search-box-container__list-item search-box-container__list-item--search-icon">
+              <input class="search-box-container__input" type="text" placeholder="Gold coast" id="destination" />
+              <label for="destination">Destination/property name</label>
+            </li>
+            <li class="search-box-container__list-item search-box-container__list-item--calendar-icon">
+              <input class="search-box-container__input" type="text" placeholder="Check-in date" id="check-in-date" />
+              <label for="check-in-date">Check-in date</label>
+            </li>
+            <li class="search-box-container__list-item search-box-container__list-item--calendar-icon">
+              <input class="search-box-container__input" type="text" placeholder="Check-out date" id="check-out-date" />
+              <label for="check-out-date">Check-out date</label>
+            </li>
+            <li class="search-box-container__list-item search-box-container__list-item--profile-icon">
+              <input class="search-box-container__input" type="text" placeholder="2 adults - 0 children"
+                id="travelers" />
+              <label for="travelers">Travellers</label>
+            </li>
+            <li class="search-box-container__list-item">
+              <input class="search-box-container__button" type="submit" placeholder="Search" />
+            </li>
+          </ul>
+        </form>
+      </div>
+    </section>
 
-            <h3 class="search-result__heading">Maldron Hotel Newcastle</h3>
-            <p class="search-result__description">
-              Maldron Hotel Newcastle Newcastle City Centre, Newcastle upon Tyne
-              0.3km from centre.
-            </p>
 
-            <a
-              class="search-result__ubication"
-              href="https://new.rentalsunited.com/Property/1941464?df=11/07/2022&dt=16/07/2022&nop=2"
-            >
-              <i
-                class="fa-solid fa-location-dot search-result__ubication-icon"
-              ></i>
-              Show on map
-            </a>
 
-            <p class="search-result__description">
-              Situated in Newcastle City Centre, Maldron Hotel features free
-              WiFi and a private court yard.
-            </p>
+    <section class="review-container">
+      <h2>254 Properties Found</h2>
+      <article class="search-result">
+        <ul class="search-result__images">
+          <li>
+            <img class="search-result__image" src="images/house-3-image.svg" alt="foto de la propiedad en alquiler" />
+          </li>
+          <!--
+  <li>
+            <img class="search-result__image" src="images/house1-image.svg" alt="foto de la propiedad en alquiler" />
+          </li>
+        -->
+
+        </ul>
+        <div class="search-result__review">
+          <div class="search-result__rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
           </div>
-          <button class="search-result__button" type="button">
+
+          <h3 class="search-result__heading">Maldron Hotel Newcastle</h3>
+          <p class="search-result__description">
+            Maldron Hotel Newcastle Newcastle City Centre, Newcastle upon Tyne
+            0.3km from centre.
+          </p>
+
+          <a class="search-result__ubication"
+            href="https://new.rentalsunited.com/Property/1941464?df=11/07/2022&dt=16/07/2022&nop=2">
+            <i class="fa-solid fa-location-dot search-result__ubication-icon"></i>
+            Show on map
+          </a>
+
+          <p class="search-result__description">
+            Situated in Newcastle City Centre, Maldron Hotel features free
+            WiFi and a private court yard.
+          </p>
+        </div>
+        <div class="search-result__button">
+          <button class="booking-button" type="button">
             Make a boooking
           </button>
-        </article>
-      </section>
+        </div>
 
-      <section class="notice-boxes-container">
+      </article>
+
+
+      <article class="search-result">
+        <ul class="search-result__images">
+          <li>
+            <img class="search-result__image" src="images/house-2-image.svg" alt="foto de la propiedad en alquiler" />
+          </li>
+          <!--
+        <li>
+                  <img class="search-result__image" src="images/house1-image.svg" alt="foto de la propiedad en alquiler" />
+                </li>
+              -->
+
+        </ul>
+        <div class="search-result__review">
+          <div class="search-result__rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <h3 class="search-result__heading">Maldron Hotel Newcastle</h3>
+          <p class="search-result__description">
+            Maldron Hotel Newcastle Newcastle City Centre, Newcastle upon Tyne
+            0.3km from centre.
+          </p>
+
+          <a class="search-result__ubication"
+            href="https://new.rentalsunited.com/Property/1941464?df=11/07/2022&dt=16/07/2022&nop=2">
+            <i class="fa-solid fa-location-dot search-result__ubication-icon"></i>
+            Show on map
+          </a>
+
+          <p class="search-result__description">
+            Situated in Newcastle City Centre, Maldron Hotel features free
+            WiFi and a private court yard.
+          </p>
+        </div>
+        <div class="search-result__button">
+          <button class="booking-button" type="button">
+            Make a boooking
+          </button>
+        </div>
+
+      </article>
+      <article class="search-result">
+        <ul class="search-result__images">
+          <li>
+            <img class="search-result__image" src="images/house-1-image.svg" alt="foto de la propiedad en alquiler" />
+          </li>
+          <!--
+        <li>
+                  <img class="search-result__image" src="images/house1-image.svg" alt="foto de la propiedad en alquiler" />
+                </li>
+              -->
+
+        </ul>
+        <div class="search-result__review">
+          <div class="search-result__rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <h3 class="search-result__heading">Maldron Hotel Newcastle</h3>
+          <p class="search-result__description">
+            Maldron Hotel Newcastle Newcastle City Centre, Newcastle upon Tyne
+            0.3km from centre.
+          </p>
+
+          <a class="search-result__ubication"
+            href="https://new.rentalsunited.com/Property/1941464?df=11/07/2022&dt=16/07/2022&nop=2">
+            <i class="fa-solid fa-location-dot search-result__ubication-icon"></i>
+            Show on map
+          </a>
+
+          <p class="search-result__description">
+            Situated in Newcastle City Centre, Maldron Hotel features free
+            WiFi and a private court yard.
+          </p>
+        </div>
+        <div class="search-result__button">
+          <button class="booking-button" type="button">
+            Make a boooking
+          </button>
+        </div>
+
+      </article>
+
+
+      <article class="search-result">
+        <ul class="search-result__images">
+          <li>
+            <img class="search-result__image" src="images/house-4-image.svg" alt="foto de la propiedad en alquiler" />
+          </li>
+          <!--
+              <li>
+                        <img class="search-result__image" src="images/house1-image.svg" alt="foto de la propiedad en alquiler" />
+                      </li>
+                    -->
+
+        </ul>
+        <div class="search-result__review">
+          <div class="search-result__rating">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <h3 class="search-result__heading">Maldron Hotel Newcastle</h3>
+          <p class="search-result__description">
+            Maldron Hotel Newcastle Newcastle City Centre, Newcastle upon Tyne
+            0.3km from centre.
+          </p>
+
+          <a class="search-result__ubication"
+            href="https://new.rentalsunited.com/Property/1941464?df=11/07/2022&dt=16/07/2022&nop=2">
+            <i class="fa-solid fa-location-dot search-result__ubication-icon"></i>
+            Show on map
+          </a>
+
+
+          <p class="search-result__description">
+            Situated in Newcastle City Centre, Maldron Hotel features free
+            WiFi and a private court yard.
+          </p>
+        </div>
+        <div class="search-result__button">
+          <button class="booking-button" type="button">
+            Make a boooking
+          </button>
+        </div>
+      </article>
+    </section>
+    <section class="notice-boxes-container">
         <div class="notice-boxes-container__container">
           <div
             class="notice-boxes-container__box notice-boxes-container__box--notice"
@@ -227,6 +302,7 @@
           </div>
         </div>
       </section>
-    </main>
-  </body>
+  </main>
+</body>
+
 </html>
