@@ -1,13 +1,12 @@
 @use "variables/colors";
-@use "partials/first-section";
-@use "partials/fonts";
-@use "partials/header";
-@use "partials/search-box";
-@use "partials/house-cards";
-@use "partials/footer";
-@use "partials/notice-boxes";
-@use "partials/info-box";
-
+@use "variables/fonts";
+@use "components/main/first-section";
+@use "components/main/house-cards";
+@use "components/main/search-box";
+@use "components/footer";
+@use "components/header";
+@use "components/main/notice-boxes";
+@use "components/main/info-box";
 
 * {
   box-sizing: border-box;
